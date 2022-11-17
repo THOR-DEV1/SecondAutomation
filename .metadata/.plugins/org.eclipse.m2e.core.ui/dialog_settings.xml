@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\MeesalaVineelSai\IdeaProjects\SecreProject\src\test\java\listeners\Jiralistener.java"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\kamal\src\kamal\Kamalfirst.java"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\OrangeHrmsINtestNG\pom.xml"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\AlertMiniProject"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\MIni_rediff_project"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\Anupama_Project\src\test\java\appElements\Login_Service_Elements.java"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\JAGAN_project\src\test\java\StepDefinitions\CreateRunner.java"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\rahul1\pom.xml"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\valuevineel\1\pom.xml"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\Mavenfirst\pom.xml"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\Login_Demo\src\test\java\runner\demorunner.java"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\Amazon_cucumber_1\src\test\java\Step_Definations\TestRunners.java"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\Amzon_project"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\Mvn_Project"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="DataEntry_1"/>
+			<item value="jjjjj"/>
+			<item value="hcjhbhj"/>
+		</list>
+		<list key="groupId">
+			<item value="DataEntry_1"/>
+			<item value="bfbhjbfv"/>
+		</list>
+		<list key="artifactId">
+			<item value="DataEntryDBMS"/>
+			<item value="tr756reri90"/>
+			<item value="dbjbhjgbjbj"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\Selenium_Academy"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\Alert_pro"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\Anupama_Project"/>
+			<item value="C:\Users\MeesalaVineelSai\eclipse-workspace\valuevineel\1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

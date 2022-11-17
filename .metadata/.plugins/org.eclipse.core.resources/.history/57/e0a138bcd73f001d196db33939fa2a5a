@@ -1,0 +1,50 @@
+package database.connection;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class codeweb {
+	
+	public static void main(String[] args) throws InterruptedException, ClassNotFoundException, SQLException {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		dbdateread db=new dbdateread();
+		ResultSet database=db.data("","");
+		do {
+			String username = database.getString(1);
+			String password = database.getString(2);
+			driver.manage().timeouts().implicitlyWait(1000,TimeUnit.SECONDS);
+			driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input")).clear();
+			driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input")).sendKeys(username);
+			driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input")).clear();
+			driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input")).sendKeys(password);
+		    driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button")).click();
+			System.out.println(username+" "+password);
+		    try {
+		    	if(driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/div/div[1]/div[1]")).isDisplayed()) {
+		    		System.out.println("hee");
+		    	}
+		    }catch(NoSuchElementException e) {
+		    	
+		    }
+			
+		}
+		while(database.next());
+		
+		
+		driver.close();
+		
+	
+	}
+	
+}

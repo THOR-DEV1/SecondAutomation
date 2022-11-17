@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;excel&apos; to &apos;DataEntryDBMS/src/test/java/DataEntry_1&apos;&#x0D;&#x0A;- Original project: &apos;SecreProject&apos;&#x0D;&#x0A;- Destination element: &apos;DataEntryDBMS/src/test/java/DataEntry_1&apos;&#x0D;&#x0A;- Original element: &apos;SecreProject/src/test/java/excel&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=DataEntryDBMS/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;DataEntry_1" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;excel" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1668669707458" version="1.0"/>
+</session>

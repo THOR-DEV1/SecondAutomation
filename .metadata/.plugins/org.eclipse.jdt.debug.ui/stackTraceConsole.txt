@@ -1,0 +1,6 @@
+org.junit.ComparisonFailure: expected:<...tps://opensource-dem[].orangehrmlive.com/w...> but was:<...tps://opensource-dem[o].orangehrmlive.com/w...>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at Step_Definitions.Mainscript.user_page_should_be_displayed(Mainscript.java:39)
+	at ?.UserPage Should be displayed(file:///C:/Users/MeesalaVineelSai/IdeaProjects/FirstIntelj/src/test/resources/features/orange.feature:7)
+

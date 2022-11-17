@@ -1,0 +1,82 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-09-26T06:33:43.122Z",
+        "line": 11,
+        "name": "Test login functionality",
+        "description": "",
+        "id": "test-login-page-of-demo-website;test-login-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4041565900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "open browser and navigate the url",
+            "match": {
+              "location": "stepdefinitions.DemoMainscript.open_browser_and_navigate_the_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2150914300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "enter test and test",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 6
+                },
+                {
+                  "val": "test",
+                  "offset": 15
+                }
+              ],
+              "location": "stepdefinitions.DemoMainscript.enter_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2366167000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on Login button",
+            "match": {
+              "location": "stepdefinitions.DemoMainscript.click_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10170458900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should login and close browser",
+            "match": {
+              "location": "stepdefinitions.DemoMainscript.user_should_login_and_close_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test login page of demo website",
+    "description": "",
+    "id": "test-login-page-of-demo-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/logindemo.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,41 @@
+package database.connection;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class codeweb {
+	
+	public static void main(String[] args) throws InterruptedException, ClassNotFoundException, SQLException {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver=new ChromeDriver();
+		
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		Thread.sleep(2000);
+		try{
+			if(driver.findElement(By.id("DROPDOWN")).isDisplayed()){
+
+			                driver.findElement(By.id("DROPDOWN")).click();
+			                driver.findElement(By.xpath("Choice in Drop DOWN)).click();
+			                driver.findElement(By.id("CheckBox")).click();  
+			     }
+			catch (NoSuchElementException e)
+			{
+			// I believe you dont have to do anything here. May be a console log will do.
+			}
+		
+		
+		driver.close();
+		
+	
+	}
+	
+}

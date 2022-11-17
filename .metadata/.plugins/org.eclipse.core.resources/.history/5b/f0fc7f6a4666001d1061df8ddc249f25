@@ -1,0 +1,39 @@
+package DataEntry_1;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+public class MAINDBMS {
+	String Url = "jdbc:mysql://localhost:3306/PolicyDB1_0";
+    String user="root";
+    String pass="root";
+	public MAINDBMS logout(String PolicyHoldername,String PolicyType,String PolicyNum,int InsuranceAmount,String Address) throws SQLException, InterruptedException {
+		  DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+	      //Getting the connection
+	      Connection con = DriverManager.getConnection(Url, user, pass);
+	      System.out.println("Connection established......");
+	      //Creating a Sttement object
+	      Statement stmt = con.createStatement();
+	      //Inserting values to a table
+	      String query = "insert into policyholderdata(PolicyHoldername,PolicyNum,InsuranceAmount,Address)values(?,?,?,?)";
+	      //Creating a Prepared Statement object
+	      PreparedStatement pstmt = con.prepareStatement(query);
+	      pstmt.setString(1,PolicyHoldername);
+//	      pstmt.setString(2,PolicyType);
+	      pstmt.setString(3,PolicyNum);
+	      pstmt.setInt(4, InsuranceAmount);
+	      pstmt.setString(5,Address);
+	      pstmt.execute();
+	      System.out.println("Action Record");
+		return this;
+		
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

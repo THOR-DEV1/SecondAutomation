@@ -1,0 +1,34 @@
+package database.connection;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class codeweb {
+	
+	public static void main(String[] args) throws InterruptedException, ClassNotFoundException, SQLException {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver=new ChromeDriver();
+		Thread.sleep(2000);
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		try {
+	    	boolean ss=driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/p")).isDisplayed();
+	    	System.out.println(ss);
+	    }catch(NoSuchElementException e) {
+	    	e.printStackTrace();
+	    }
+		
+		driver.close();
+		
+	
+	}
+	
+}
